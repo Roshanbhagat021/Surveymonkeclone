@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F7F8FA;
+}
+
+main{
+    width: 400px;
+    height: 540px;
+    margin-top: 20px;
+}
+
+#logo>img{
+    height:70px;
+}
+
+#Login_container{
+    width: 400px;
+    height: 450px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;  
+    margin-block: 30px;
+    padding: 20px;
+    background-color: white;
+
+}
+
+#Login_container>p{
+    text-align: end;
+
+}
+
+span{
+    color: #007faa;
+    /* line-height: 1px; */
+}
+
+span:hover{
+    border-bottom: 1px solid #007faa;
+}
+
+form{
+    background-color: white;
+
+}
+
+#Login_container>h1{
+    font-weight: 300;
+    margin-block: 20px;
+}
+
+label{
+    font-size: 13px;
+    font-weight: bold;
+    /* padding: 10px; */
+}
+
+.input{
+    width: 350px;
+    height: 40px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 4px;
+    margin-block: 10px;
+}
+
+.input:hover{
+    border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+#sumit{
+    width: 350px;
+    height: 40px;
+    border-radius: 4px;
+    border: none;
+    background-color: #00bf6f;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+
+#other_methods{
+    width: 100%;
+    border: 1px solid gray;
+    margin-bottom: 20px;
+}
+
+#Login_container>#or{
+    text-align: start;
+    font-size: small;
+   
+}
+
+
+#companies{
+    width: 100%;
+    height: 55px;
+    /* border: 1px solid gray; */
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 10px;
+}
+
+
+#companies>div{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#companies>div>img{
+    height: 37px;
+}
+
+
+#companies>div:hover{
+    border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}

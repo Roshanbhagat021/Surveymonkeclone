@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to SurveyMonkey!</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <!-- Nabbar -->
+    <nav>
+        <div id="left_section">
+            <img src="https://cdn.smassets.net/assets/dashweb/smlib.globaltemplates/14.5.2/assets/logo/surveymonkey_logo_dark.svg" alt="">
+            <h2>Dashboard</h2>
+            <h2>My Surveys</h2>
+            <h2>Plans & Pricing</h2>
+        </div>
+
+        <div id="right_section" class="flex">
+            <button class="btn" id="Upgrade">Upgrade</button>
+            <button  class="btn" id="Create_survey">Create Survey</button>
+            <img src="https://cdn.smassets.net/assets/dashweb/smlib.globaltemplates/14.5.2/assets/ProductsIcon.svg" alt="">
+            <img src="https://cdn.smassets.net/assets/dashweb/smlib.globaltemplates/14.5.2/assets/HelpIcon.svg" alt="">
+            <button  class="btn" id="logout" onclick="logout()">Logout</button>
+        </div>
+    </nav>
+
+
+    <!-- Product section -->
+    <h1>Welcome back!</h1>
+    <div id="product_section" class="flex">
+        <h3><span>Quick survey:</span> What kind of survey do you want to send first? </h3>
+        <div id="tools">
+            <div>Market Research</div>
+            <div>Customer Satisfaction</div>
+            <div>Event Feedback</div>
+            <div>Employee Engagement</div>
+            <div>Course & Training Feedback</div>
+            <div>Performance Evaluation</div>
+            <div>Diversity & Inclusion Feedback</div>
+            <div>Product Experience Feedback</div>
+            <div>Others</div>
+        </div>
+    </div>
+
+
+    <!-- Main section -->
+   <main class="flex">
+      <div id="container">
+        <div id="outcome">
+            <div id="open">
+                <div class="flex">
+                    <div>
+                        <h1>Open</h1>
+                        —
+                    </div>
+                    <div>
+                        <h1>Draft</h1>
+                        —
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            <div>
+                <h3>Total Responses</h3>
+                —
+            </div>
+            <div>
+                <h3>Average completion rate</h3>
+                —
+            </div>
+            <div>
+                <h3>Tipical time spent</h3>
+                —
+            </div>
+        </div>
+
+        <!-- Target btn -->
+        <div id="target_btn">
+            <button class="btn">Buy targated Responses</button>
+        </div>
+
+
+        <!-- Surveys Expample heading-->
+        <div id="survey_heading">
+            <h2>Survey Expamples</h2>
+
+            <p>See what kinds of insights you can discover from survey results. Here is an example of an imaginary company with a realistic challenge. <span>See all examples.</span></p>
+        </div>
+
+        <!-- Survey Examples -->
+        <div id="sur_examples">
+            <div id="view_insight" class="flex">
+                <div id="insight_text">
+                    <h4>Your experience with our ridesharing service.</h4>
+                    <p><i>Customer Satisfaction Survey</i></p>
+                    <p>Questions: 9     Answered: 359</p>
+                </div>
+                <div id="insight_btn">
+                    <button class="btn">VIEW INSIGHT</button>
+                </div>
+            </div>
+
+            <div id="Lower_view_insight" class="flex">
+                <div id="lower_insight_text">
+                    <h4>What you can learn:</h4>
+                    <p>&bull;Would our customers recommend us to a friend?</p>
+                    <p>&bull;Are they finding value from our service?</p>
+                    <p>&bull;How is our support team doing?</p>
+                    <p>&bull;What new features should we build?</p>
+                    <p id="para">This ridesharing app sends this quarterly survey to their customers to understand what they think about the service overall and what the company can do next to keep their customers happy. The competition is fierce, so they always want to make sure they’re delivering the best possible customer experience.</p>
+                </div>
+                <div id="Lower_insight_img">
+                    <img src="./assets/chart.png" alt="">
+                </div>
+            </div>
+
+            <div id="watch">
+                <button  class="btn" ><a href="">WATCH THE VIDEO</a></button> 
+
+            </div>
+
+
+        </div>
+
+        <!-- Cards section -->
+
+        <div id="cards" class="flex" >
+            <div>
+                <div id="cards_heading">
+                    <h2>Quick Poll</h2>
+                </div>
+
+                <div id="card">
+                    <img src="./assets/cardimage1.png" alt="">
+                    <h2>Help us improve this experience!</h2>
+                    <p>We're designing a new homepage experience and would love to learn what features would be most helpful to you. Please take 3 minutes to share your thoughts and shape the future of this page.</p>
+                    <button class="btn">Take Poll</button>
+                </div>
+            </div>
+            <div>
+                <div id="cards_heading">
+                    <h2>Quick Poll</h2>
+                </div>
+
+                <div id="card">
+                    <img src="./assets/cardimage2.png" alt="">
+                    <h2>Get survey responses from around the world in minutes</h2>
+                    <p>Easily find your ideal respondents for market research with SurveyMonkey Audience.</p>
+                    <button class="btn" id="last_btn">BUY TARGETED RESPONSES</button>
+                </div>
+            </div>
+
+        </div>
+
+
+       
+      </div>
+   </main>
+
+    <!-- Footer -->
+    <footer>
+       <div id="lang" >
+        <button class="btn">English</button>
+       </div>
+            
+       <p>&bull;About SurveyMonkey &bull;Careers &bull;Developers &bull;Privacy Notice &bull;California Privacy Notice &bull;Email Opt-In &bull;Help &bull;Cookies &bull;Notice &bull;Copyright © 1999-2023 SurveyMonkey &bull;Customise
+    </p>
+    <img src="./assets/business logo.png" alt="">
+    <img src="./assets/business02 logo.png" alt="">
+    </footer>
+
+</body>
+</html>
+
+
+<script>
+
+    function logout(){
+        localStorage.removeItem("isAuth")
+        alert("Logout sucess")
+        window.location.href="./index.html"
+    }
+
+
+
+</script>
